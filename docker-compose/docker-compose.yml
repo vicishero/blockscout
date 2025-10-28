@@ -36,7 +36,7 @@ services:
     environment:
         ETHEREUM_JSONRPC_HTTP_URL: http://172.31.19.65:8545/
         ETHEREUM_JSONRPC_TRACE_URL: http://172.31.19.65:8545/
-        # ETHEREUM_JSONRPC_WS_URL: ws://172.31.19.65:8545/
+        ETHEREUM_JSONRPC_WS_URL: ws://172.31.19.65:8546/
         CHAIN_ID: '17178'
     ports:
       - "4000:4000"
