@@ -37,7 +37,7 @@ server {
 server 
 {
     listen  80;
-    server_name www.aicchain.vip aicchain.vip;
+    server_name www.aicchain.vip;
 
     location / {
         root  /usr/share/nginx/html/aicchain/;
@@ -52,6 +52,12 @@ server
     }
 }
 
+# 裸域重定向
+server {
+    listen 80;
+    server_name aicchain.vip;
+    return 301 https://www.aicchain.vip$request_uri;
+}
 
 server 
 {
