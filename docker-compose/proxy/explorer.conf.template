@@ -40,7 +40,7 @@ server
     server_name www.aicchain.vip aicchain.vip;
 
     location / {
-            root  /usr/share/nginx/html;
+            root  /usr/share/nginx/html/aicchain/;
             index  index.html index.htm;
             try_files $uri $uri/ /index.html;
     }
